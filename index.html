@@ -5,39 +5,7 @@
         <meta charset="UTF-8">
         <title>Casa Crativa</title>
 
-        <style>
-
-            body {               
-                background-color: #e5e5e5;
-                color: #25282b;
-                
-                text-align: center;
-            }
-            
-            button {
-                border: none;
-                color: #ff5E84;
-                font-weight: bold;
-
-                background: none;
-            }
-
-            button.fat {
-                color: white;
-                background: #ff5E84;
-            }
-
-            #footer a {
-                color: #25282B;
-                text-decoration: none;
-
-            }
-
-            .hide {
-                display: none;
-            }
-        </style>
-
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -61,17 +29,7 @@
 
         <p id="footer">Com ❤ <a href="https://github.com/gabriel-bianchessi">Gabriel Bianchessi</a></p>
 
-        <script>
-
-            document
-                .querySelector("button.fat")
-                .addEventListener("click", function(){
-                    document.querySelector("#footer")
-                    .classList
-                    .toggle("hide")
-                })
-
-        </script>
+        <script src="script.js"></script>
     </body>
 
 </html>
