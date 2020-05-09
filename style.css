@@ -3,6 +3,7 @@ body {
     background-color: #e5e5e5;
     color: #25282b;
 
+    font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
 
@@ -30,6 +31,12 @@ a:hover {
     
     text-decoration: underline;
 
+}
+
+p, .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
 }
 
 #intro {
@@ -64,6 +71,11 @@ button {
 
     outline: none;
 
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 00.1px;
+
 }
 
 button:hover {
@@ -90,8 +102,18 @@ footer {
     
     text-align: center;
    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 00.1px;
+
+    color: #777;
+
 }
 
+footer a{
+    opacity: 0.7;
+}
 
 .idea {
     display: flex;
@@ -124,4 +146,33 @@ footer {
 
 .idea description {
     margin: 16px 0;
+}
+
+#modal {
+    background: #ff5E84;
+
+    position: absolute;
+    top: 0;
+    
+    width: 100vw;
+    height: 100vw;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#modal .content {
+    margin-top: 128px;
+
+    color: white;
+    
+}
+
+#modal .content h1 {
+    text-align: center;
+
+    text-transform: uppercase;
+
 }
