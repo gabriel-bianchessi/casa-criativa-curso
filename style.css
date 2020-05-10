@@ -275,5 +275,9 @@ form button:hover {
     visibility: hidden;
 }
 
+/*Ideias.html*/
 
-
+header {
+    display: flex;
+    justify-content: space-between;
+}
