@@ -7,15 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-ideas">
     
     <div id="container">
         <header>
-            <img src="images/logo.png" alt="Imagem da Logomarca">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Imagem da Logomarca">
+            </a>
             <nav>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#">Ideias</a></li>
-                <li><a href="#">Nova Ideia</a></li>
+                <li><a href="#" onclick="onOff()" class="button">Nova Ideia</a></li>
             </nav>
         </header>
         <section id="title">
@@ -63,13 +64,27 @@
                         </div>
                         <a href="#">Ir para a Ideia</a>
                     </div>
-                </div>     
+                </div> 
+                
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729032.svg" 
+                    alt="Imagem de Karaokê">
+    
+                    <div class="content">
+                        <h3>Karaokê</h3>
+                        <p>Diversão em família</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias suscipit repellendus dolore, harum nostrum fuga facere! Deleniti, asperiores soluta recusandae laborum omnis possimus mollitia dolore itaque voluptatem deserunt placeat aperiam.
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
+                    </div>
+                </div> 
                     
                 </div>
             </section>
         </main>
         <footer id="footer">
-            Com ❤ <a href="https://github.com/gabriel-bianchessi">Gabriel Bianchessi</a>
+            Com ❤ <a href="https://github.com/gabriel-bianchessi" target="blank">Gabriel Bianchessi</a>
         </footer>
     </div>
 
