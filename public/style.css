@@ -167,7 +167,7 @@ footer a{
 #modal {
     background: #ff5E84;
 
-    position: absolute;
+    position: fixed;
     top: 0;
 
     bottom: 0;
@@ -202,7 +202,7 @@ footer a{
     width: 80%;
     max-width: 800px;
 
-    margin: 0 auto 15%;
+    margin: 0 auto 5%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
