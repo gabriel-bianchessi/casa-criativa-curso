@@ -13,12 +13,13 @@
 
         <!--Para criar variável {{variavel}}-->
 
+
         <div id="container">
 
             <section id="intro">
                
                 <header>
-                    <a href="index.html">
+                    <a href="/">
                         <img src="images/logo.png" alt="Imagem da Logomarca">
                     </a>
                 </header>
@@ -49,44 +50,23 @@
             
             <section id="last-ideas">
 
-                <div class="idea">
-                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de programação">
 
-                    <div class="content">
-                        <h3>Cursos de Programação</h3>
-                        <p>Estudo</p>
-                        <div class="description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias suscipit repellendus dolore, harum nostrum fuga facere! Deleniti, asperiores soluta recusandae laborum omnis possimus mollitia dolore itaque voluptatem deserunt placeat aperiam.
+                {% for idea in ideas %}
+                    <div class="idea">
+                        <img src="{{idea.img}}" alt="Imagem de {{idea.title}}">
+
+                        <div class="content">
+                            <h3>{{idea.title}}</h3>
+                            <p>{{idea.category}}</p>
+                            <div class="description">
+                                {{idea.description}}
+                            </div>
+                            <a href="{{idea.url}}" target="_blank">Ir para a Ideia</a>
                         </div>
-                        <a href="#">Ir para a Ideia</a>
                     </div>
-                </div>
+                {% endfor %}
 
-                <div class="idea">
-                    <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercícios">
 
-                    <div class="content">
-                        <h3>Exercícios</h3>
-                        <p>Saúde</p>
-                        <div class="description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias suscipit repellendus dolore, harum nostrum fuga facere! Deleniti, asperiores soluta recusandae laborum omnis possimus mollitia dolore itaque voluptatem deserunt placeat aperiam.
-                        </div>
-                        <a href="#">Ir para a Ideia</a>
-                    </div>
-                </div>
-
-                <div class="idea">
-                    <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
-                    alt="Imagem de Meditação">
-
-                    <div class="content">
-                        <h3>Meditação</h3>
-                        <p>Mentalidade</p>
-                        <div class="description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias suscipit repellendus dolore, harum nostrum fuga facere! Deleniti, asperiores soluta recusandae laborum omnis possimus mollitia dolore itaque voluptatem deserunt placeat aperiam.
-                        </div>
-                        <a href="#">Ir para a Ideia</a>
-                    </div>
                 </div>     
                     
                 </div>
